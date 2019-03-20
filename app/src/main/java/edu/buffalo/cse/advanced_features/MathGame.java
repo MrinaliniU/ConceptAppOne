@@ -50,6 +50,7 @@ public class MathGame extends AppCompatActivity {
                     startTimer();
                     generateQuestion();
                     gameStarted = true;
+                    mainButton.setClickable(false);
                 }else{
                     mainButton.setText("Start!");
                     question.setText("Get Ready!");
@@ -107,6 +108,7 @@ public class MathGame extends AppCompatActivity {
 
             }
             public void onFinish(){
+                mainButton.setClickable(true);
                 if(correctAnswerCount >= 15){
                     question.setText("You are a Genius!");
 
