@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -33,7 +34,12 @@ public class PandaTimer extends AppCompatActivity {
             public void onClick(View v) {
                 isCounterActive =true;
                 seek.setEnabled(false);
-                startTimer(progressValue);
+                if(progressValue != null){
+                    startTimer(progressValue);
+                }else{
+                    Toast.makeText(PandaTimer.this, "Use Progress-Bar to Set Time", Toast.LENGTH_SHORT).show();
+                    seek.setEnabled(true);
+                }
             }
         });
         seek = findViewById(R.id.seekBar2);
