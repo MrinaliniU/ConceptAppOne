@@ -1,5 +1,5 @@
 # ConceptAppOne
-Android app that has four applications in it. These apps serve as example for some specific functions available in Android.
+Android app that has four applications in it. These apps serve as example for some specific functions available in Android. This an app created based on one of the online Udemy Course.
 <p align="left">
   <img width="200" height="300" src="/screenshots/MainScreen.png">
 </p>
